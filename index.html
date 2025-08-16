@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>استشارة.com</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif;}
+  body { background: #f4f6f8; color: #333; line-height: 1.6;}
+  header { background: linear-gradient(135deg, #4facfe, #00f2fe); color: white; padding: 80px 20px; text-align: center;}
+  header h1 { font-size: 3em; margin-bottom: 10px; }
+  header p { font-size: 1.2em; }
+  section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+  section h2 { text-align: center; margin-bottom: 40px; font-size: 2em; color: #333; }
+  .card { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 30px; transition: transform 0.3s;}
+  .card:hover { transform: translateY(-5px); }
+  form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+  input, textarea { padding: 15px; font-size: 16px; border: 1px solid #ccc; border-radius: 10px; width: 100%; }
+  button { padding: 15px; font-size: 18px; background: #4facfe; color: white; border: none; border-radius: 10px; cursor: pointer; transition: background 0.3s;}
+  button:hover { background: #00f2fe; }
+  footer { background: #222; color: white; text-align: center; padding: 30px 20px; }
+  footer p { margin: 5px 0; }
+  @media(max-width:600px) {
+    header h1 { font-size: 2em; }
+    section h2 { font-size: 1.5em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>استشارة.com</h1>
+  <p>احصل على استشارتك بسهولة وسرعة عبر فريقنا المتخصص</p>
+</header>
+
+<section>
+  <h2>خدماتنا</h2>
+  <div class="card">
+    <h3>استشارات قانونية</h3>
+    <p>نقدم استشارات قانونية موثوقة وسريعة لحل مشاكلك القانونية.</p>
+  </div>
+  <div class="card">
+    <h3>استشارات مالية</h3>
+    <p>نساعدك على التخطيط المالي وإدارة الأموال بطريقة صحيحة وفعالة.</p>
+  </div>
+  <div class="card">
+    <h3>استشارات شخصية</h3>
+    <p>نستمع لك ونقدم نصائح عملية لتحسين حياتك الشخصية والمهنية.</p>
+  </div>
+</section>
+
+<section>
+  <h2>تواصل معنا</h2>
+  <form action="https://formspree.io/f/xpwlezqa" method="POST">
+    <input type="text" name="name" placeholder="اسمك" required>
+    <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+    <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
+    <button type="submit">إرسال الرسالة</button>
+  </form>
+</section>
+
+<footer>
+  <p>📧 contact@استشارة.com</p>
+  <p>&copy; 2025 استشارة.com جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
