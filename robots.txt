@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /search
+Disallow: /feeds/
+Disallow: /favicon.ico
+Allow: /
+
+Sitemap: https://www.استشارة.com/sitemap.xml
